@@ -116,7 +116,7 @@ def drawDisplay(hand_landmarks, image):
     # center position pulgar, indice
     center = int((x1 + x2) / 2), int((y1 + y2) / 2)
     #formula distance two points
-    distanceTwoPoint = math.sqrt((abs(x2 - x1) ** 2) + (abs(y2 - y1) ** 2))
+    distanceTwoPoint = math.sqrt(((x2 - x1) ** 2) + ((y2 - y1) ** 2))
     #if distance two point < 30
     if distanceTwoPoint < 30:
         #add point in the array
